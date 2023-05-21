@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Permanent+Marker&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    overflow: hidden;
+}
+
+/* ============Header Section================== */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 4rem;
+    background: #000;
+    box-shadow: 0 0 1rem #323030;
+    z-index: 2;
+
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    float: right;
+    font-family: 'Permanent Marker', cursive;   
+}
+
+.logo a{
+    color: #b1c7c7;
+    font-size: 2.3rem;
+    font-weight: 700;
+    padding-left: 5rem;
+}
+
+.logo span{
+    color: #57d194;
+}
+
+.navbar ul{
+    margin-right: 8rem;
+}
+
+.navbar li{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    
+}
+
+.navbar li a{
+    color: #fff;
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+}
+
+.navbar li a:hover{
+    color: #b1c7c7;
+}
+.navbar .active {
+    color: #b1c7c7;
+}
+
+/* =======Main Section=================== */
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #b1c7c7;
+}
+
+.text{
+    padding: 10rem 5rem;
+    
+}
+
+.text-1{
+   
+    font-size: 4rem;
+    font-family: 'Caveat', cursive;
+    color: #425252;
+    
+}
+.text-2{
+   
+    font-size: 6rem;
+    font-family: 'Permanent Marker', cursive;
+   
+}
+.text-3{
+    color: #425252;
+    font-size: 4rem;
+    font-family: 'Caveat', cursive;
+}
+
+.text-3 span{
+    color: #57d194;
+}
+
+.social-links button{
+    
+    margin-left: 3rem;
+    height: 2rem;
+    background: blue;
+    box-shadow: 0px 0px 26px #323030;
+    border-radius: 2rem;
+    border: none;
+}
+
+.social-links button a{
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #88cdae;
+}
+
+.social-links button:hover{
+    box-shadow: none;
+}
+
+.profile-photo{
+    display: inline-block;
+    padding: 5rem 5rem;
+    top: 3rem;
+}
+
+.profile-photo img{
+    height: 27rem;
+    width: 27rem;
+    border-radius: 50%;
+    box-shadow: 0px 0px 22px rgb(79, 73, 73);
+    background-image:linear-gradient(#b1c7c7, #425252, #61e0a7) ;
+}
+
+
+.social-links{
+   display: flex;
+   justify-content: start;
+   align-items: center;
+}
+
+.social-links a{
+    margin-top: 5rem;
+    padding: 2rem 2rem; 
+    font-size: 2rem;
+    color: #0c0606;
+    text-shadow: 0px 0px 26px #1e2323;
+}
+
+.social-links button{
+    margin-top: 5rem;
+}
+
+.social-links a:hover{
+    color: #170b4a;
+    /* background: #000; */
+    text-shadow: none;
+}
+
+
+
+/* ========================About css style======================= */
+
+
+.about{
+    width: 100%;
+    height: calc(100vh - 4rem);
+    padding: 8rem 0;
+    background: #545858;
+}
+
+.about img{
+    height: auto;
+    width: 520px;
+    border-radius: 50%;
+}
+
+.about-text{
+    width: 550px;
+}
+
+.main-about{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-text h1{
+    color: #0c0b0b;
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.about-text h5{
+    color: #fff;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    font-family: 'Great Vibes', cursive;
+}
+
+.about-text p{
+    color: #b1c7c7;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 22px;
+    margin-bottom: 45px;
+    font-family: 'Caveat', cursive;
+}
+
+.about-text span{
+    color: #61e0a7;
+}
+
+/* =======End about css style========================== */
+
+
+/* ===========Blog css style============== */
+
+.blog-container{
+    width: 100%;
+}
+
+.blog-container .row{
+    width: 80%;
+    margin: auto;
+}
+
+.blog-container .row .blog-header{
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    padding-top: 4rem;
+}
+
+.blog-container .row .blog-header h1{
+    padding-top: 30px;
+    font-size: 45px;
+    color: #425252;
+}
+
+.blog-container .row .blog-header p{
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #1e2323;
+}
+
+.blog-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.blog-content .card{
+    flex: 1;
+    margin: 50px 20px;
+    box-shadow: 0 0 22px 0 rgba(0, 0, 0, 0.3);
+    background: #fff;
+}
+
+.blog-content .card:hover{
+    box-shadow: none;
+}
+
+.blog-content .card img{
+    width: 100%;
+    height: 220px;
+}
+
+.blog-content .card h4{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.blog-content .card p{
+    font-size: 15px;
+    color: #425252;
+    line-height: 1.5;
+    padding: 10px;
+}
+
+
+
+/* ===========End Blog css style============== */
+
+
+/* ========================contact css style======================= */
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: #b1c7c7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+form {
+    background: #b1c7c7;
+    box-shadow: 0px 0px 20px  black;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 30px;
+    margin-top: 5rem;
+}
+
+
+form h3{
+    color: #100202;
+    font-weight: 800;
+    text-shadow: 0 0 20px black;
+    font-family: 'Great Vibes', cursive;
+}
+
+
+
+form input, form textarea {
+    
+    border: none;
+    margin: 10px 0;
+    padding: 20px;
+    box-shadow: 0px 0px 15px  black;
+    outline: none;
+    background: #88cdae;
+    row-gap: 2rem;
+    font-size: 20px;
+    border-radius: 30px;
+    font-family: 'Caveat', cursive;
+}
+
+form textarea:hover{
+    box-shadow: none;
+}
+
+form input:hover{
+    box-shadow: none;
+}
+
+form button {
+    padding: 15px;
+    background: rgb(70, 70, 205);
+    color: white;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+    box-shadow: 0px 0px 15px  black;
+}
+
+form button:hover {
+    box-shadow: none;
+    color: #88cdae;
+}
+
+/* ========================End contact css style======================= */
